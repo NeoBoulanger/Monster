@@ -1,0 +1,155 @@
+.flexbox {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	height: 70vh;
+	margin: 0 auto;
+	align-items: center;
+	justify-content:space-between;
+}
+
+body{
+	height: 100vh;
+	margin: 0;
+	background-image: url("../img/background.png");
+  	backdrop-filter: blur(10px);
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	padding-block: 50px;
+}
+
+*{
+	margin: 0;
+}
+
+html{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+h1{
+	margin-bottom: 100px;
+	text-align: center;
+	color: white;
+}
+
+h1,p{
+	font-family: 'Minecraftia', sans-serif;
+}
+
+#steve{
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 3vh;
+	padding: 5px 10px;
+	color: white;
+}
+
+.steve{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-height: 100%;
+}
+
+.display{
+	flex-grow: 1;
+	width: 500px;
+}
+
+#steveSkin{
+	height: 50vh;
+	max-height: 50vh;
+}
+
+#vie{
+	width: 40vh;
+}
+
+#xp{
+	width: 40vh;
+}
+
+.steve p:last-of-type {
+	color: #72ac3e;
+	font-size: 1.5em;
+}
+
+
+#actionbox {
+    width: 70%;
+    max-width: 70%;
+    height: 70%;
+    border: 1px solid grey;
+    overflow: hidden;
+    margin-top: 10vh;
+    margin-inline: auto;
+    font-size: 1.5em;
+}
+
+.livre{
+	background-image: url("../img/book.png");
+	height: 100%;
+	min-width:30vw;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.menu, #action{
+	display: flex;
+	flex-direction: column;
+}
+
+#action{
+	width: 100%;
+	height: 500px;
+    gap: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+	position: fixed;
+	width: 15%;
+	padding: 50px;
+	left: 0;
+	transform: translateX(-50%);
+  	transition: transform 0.2s ease;
+}
+
+.menu:hover {
+  transform: translateX(0);
+}
+
+#action2{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 10px;
+	gap: 10px;
+}
+
+.k,.b1{
+	flex-grow: 1;
+}
+
+button {
+	flex-grow: 1;
+	min-height: 75px;
+    background-image:url("../img/stone.png"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    font-size: 1.5em;
+    font-family: 'Minecraftia', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+
+button:hover {
+    background-image:url("../img/stonehover.png");
+    color: yellow;
+    cursor: pointer;
+}
